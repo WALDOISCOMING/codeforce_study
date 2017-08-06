@@ -1,11 +1,14 @@
 package day_2017_08_04;
 
+import java.beans.beancontext.BeanContext;
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.util.StringTokenizer;
+
+import day_2017_08_03_EducationalCodeforcesRound26.b;
 
 
 /*
@@ -47,38 +50,25 @@ public class ECD_26_b {
         int m = sc.nextInt();
         String input[]=new String[n];
         
-        boolean str=true;
+        boolean str_1=true;
+        boolean str_2=true;
         int counting=0;
+        int both=0;
+     
+        
         for(int i=0;i<n;i++){
         		input[i]=sc.nextLine();
         }
-        if(base(input[0]))
-        {//가로기준
-        	char now=input[0].charAt(0);
+     
+        
+        if(n%3==0)
+		{
+        	both++;
+        	char now=input[0].charAt(0); 
         	
-        	for(int i=1;i<n;i++)
+        	for(int i=1;i<input[0].length();i++)
         	{
-        		if(now==input[i].charAt(0))
-        		{
-        			if(now=='R')R++;
-        			if(now=='G')G++;
-        			if(now=='B')B++;
-        		}else{
-        			counting++;
-        			now=input[i].charAt(0);
-        		}
-        		
-        	}
-        	if(counting>=3)
-			str=false;
-        	
-        	
-        }else{
-        	//세로기준.
-        	char now=input[0].charAt(0);
-        	
-        	for(int i=1;i<m;i++)
-        	{
+        		out.print(now);
         		if(now==input[0].charAt(i))
         		{
         			if(now=='R')R++;
@@ -90,30 +80,110 @@ public class ECD_26_b {
         		}
         		
         	}
+        	if(now=='R')R++;
+			if(now=='G')G++;
+			if(now=='B')B++;
+			
         	if(counting>=3)
-    			str=false;
+			str_1=false;
         	
-        }
-        boolean check=true;
-        if(n<3&&m<3)
-        	check=false;
-        if(R==G&&G==B&&str==true&&check)
-        	out.println("YES");
-        else
-        	out.println("NO");
+		}
+        
+			
+		if(m%3==0)
+		{
+			both++;
+			char now=input[0].charAt(0);        	
+        	for(int i=1;i<input.length;i++)
+        	{
+        		
+        		if(now==input[i].charAt(0))
+        		{
+        			if(now=='R')R++;
+        			if(now=='G')G++;
+        			if(now=='B')B++;
+        		}else{
+        			counting++;
+        			now=input[i].charAt(0);
+        		}        		
+        	}
+        	if(now=='R')R++;
+			if(now=='G')G++;
+			if(now=='B')B++;
+        	
+        	if(counting>=3)
+    			str_2=false;
+		}
+        
+        
+    out.print(both);
+		if(R==G&&G==B&&(str_1==true&&str_2==true)&&both==2)
+		{
+			out.println("YES");
+		}else if(R==G&&G==B&&(str_1==true)&&both==1)
+		{
+			out.println("YES");
+		}else if(R==G&&G==B&&(str_2==true)&&both==1)
+		{
+			out.println("YES");
+		}
+		else{				
+			out.println("NO");
+		}
+        
+        
+    
      out.close();
         
 	}
 	
-	public static boolean base(String input)
+	
+	public static void A(String input[])
 	{
-		char ch = input.charAt(0);
-		for(int i=1;i<input.length();i++)
+		if(input.length%3==0)
 		{
-			if(ch!=input.charAt(i))
-				return false;
+			
 		}
-		return true;
+			
+		if(input[0].length()%3==0)
+		{
+			
+		}
+		
+	}
+	
+	public static void 가로()
+	{
+		
+	}
+	public static int base(String input[])
+	{
+		char ch = input[0].charAt(0);
+		int state=0;
+		for(int i=1;i<input[0].length();i++)
+		{
+			state=1;
+			if(ch!=input[0].charAt(i)){
+				state=0;
+				break;
+			}
+		}
+
+		if(state==1){
+			return 1;
+		}
+		state=0;
+		for(int i=1;i<input.length;i++)
+		{
+			
+			if(ch!=input[i].charAt(0)){
+				state=-1;
+				break;
+			}
+		}
+		
+		
+		return state;
 		
 	}
 	
