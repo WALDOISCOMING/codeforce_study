@@ -25,8 +25,7 @@ In the only line print "YES" (without the quotes), if number n is almost lucky. 
 public class LuckyDivision {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		 MyScanner sc = new MyScanner();
+			 MyScanner sc = new MyScanner();
          out = new PrintWriter(new BufferedOutputStream(System.out));
      //첫번째 입력은 동전의 갯수. 두번째는 동전의 값들이다. 쌍둥이가 있다면 내가 무조건 많지만 최소한으로 많도록 하자.
 

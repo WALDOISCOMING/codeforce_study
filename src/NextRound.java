@@ -27,7 +27,6 @@ The second line contains n space-separated integers a1, a2, ..., an (0 �
 Output
 Output the number of participants who advance to the next round.
  */
-
 public class NextRound {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

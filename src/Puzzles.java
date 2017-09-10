@@ -26,7 +26,6 @@ Output
 Print a single integer — the least possible difference the teacher can obtain.
 
  */
-
 public class Puzzles {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

@@ -28,8 +28,7 @@ Print the new sum that Xenia can count.
  */
 public class HelpfulMaths {
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
+	
 		/*
 		 * 한번 입력하고 출력한다. 이 연산은 숫자와 +로만 이루어지고 공백이 없으며 앞이 작은수 뒤에 큰수를 가져야한다.
 		 */

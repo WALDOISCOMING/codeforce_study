@@ -38,7 +38,7 @@ Examples
 
 public class Dominopoling {
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	
 		
 		/*
 		 * 한번 입력되고 출력된다. 2*1의 형태가 입력받는 한줄의 가로 세로를 덮는다. 단 초과하지는 않는다.

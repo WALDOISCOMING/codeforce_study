@@ -29,7 +29,7 @@ Print a single integer — the minimum year number that is strictly larger than 
 
 public class BeautifulYear {
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		 MyScanner sc = new MyScanner();
          out = new PrintWriter(new BufferedOutputStream(System.out));
      //현 자릿수 다음으로 자릿수가 고유 한 걸 찾는다.
@@ -103,7 +103,7 @@ public class BeautifulYear {
 	       long nextLong() {
 	           return Long.parseLong(next());
 	       }
-	  
+	 
 	       double nextDouble() {
 	           return Double.parseDouble(next());
 	       }

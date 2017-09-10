@@ -27,7 +27,7 @@ Print on the single line "YES" if n is a nearly lucky number. Otherwise, print "
  */
 public class NearlyLuckyNumber {
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	// TODO Auto-generated method stub
 		 MyScanner sc = new MyScanner();
          out = new PrintWriter(new BufferedOutputStream(System.out));
      //한줄의 입력에서 첫번째는 바나나 가격,두번째는 군인의 사용가능 돈,세번째는 군인이 가지고 싶은 바나나 숫자

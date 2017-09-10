@@ -6,6 +6,8 @@ public class A {
     public static void main(String[] args) throws IOException {
         Program p = new Program();
         Scanner scanner = new Scanner(System.in);
+String str = null;
+str.charAt(1);
 
         int n = scanner.nextInt();
         int m = scanner.nextInt();

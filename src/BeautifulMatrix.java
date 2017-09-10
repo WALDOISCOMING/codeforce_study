@@ -28,7 +28,7 @@ Print a single integer — the minimum number of moves needed to make the matrix
 public class BeautifulMatrix {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	
 		 MyScanner sc = new MyScanner();
          out = new PrintWriter(new BufferedOutputStream(System.out));
      //
@@ -60,8 +60,7 @@ public class BeautifulMatrix {
         	}
         }
         
-        //
-        
+    
         
      
  

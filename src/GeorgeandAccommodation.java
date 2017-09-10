@@ -15,6 +15,7 @@ inputstandard input
 outputstandard output
 George has recently entered the BSUCP (Berland State University for Cool Programmers). George has a friend Alex who has also entered the university. Now they are moving into a dormitory.
 
+
 George and Alex want to live in the same room. The dormitory has n rooms in total. At the moment the i-th room has pi people living in it and the room can accommodate qi people in total (pi ≤ qi). Your task is to count how many rooms has free place for both George and Alex.
 
 Input
@@ -30,7 +31,7 @@ Print a single integer — the number of rooms where George and Alex can move in
 public class GeorgeandAccommodation {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	
 		 MyScanner sc = new MyScanner();
          out = new PrintWriter(new BufferedOutputStream(System.out));
      //첫번째는 후에 입력될 줄수

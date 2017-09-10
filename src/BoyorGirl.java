@@ -27,7 +27,48 @@ If it is a female by our hero's method, print "CHAT WITH HER!" (without the quot
  */
 
 public class BoyorGirl {
+
+	 public static int[] solution(int[][] v) {
+	        int[] answer = {};
+	        if(v[0][0]==v[1][0]){
+	            if(v[0][1]==v[2][1]){
+	                answer[0]=v[2][0];
+	                answer[1]=v[1][1];
+	            }else{
+	                answer[0]=v[2][0];
+	                answer[1]=v[0][1];
+	            }
+	        }
+	        if(v[0][0]==v[2][0]){
+	            if(v[1][1]==v[2][1]){
+	                answer[0]=v[1][0];
+	                answer[1]=v[0][1];
+	            }else{
+	                answer[0]=v[1][0];
+	                answer[1]=v[2][1];
+	            }
+	        }
+	        if(v[1][0]==v[2][0]){
+	                 if(v[0][1]==v[2][1]){
+	                answer[0]=v[0][0];
+	                answer[1]=v[1][1];
+	            }else{
+	                answer[0]=v[0][0];
+	                answer[1]=v[0][1];
+	            }
+	        }
+	        return answer;
+	    }
+	
+	
 	public static void main(String[] args) {
+		int [] a1 ={1,2};
+		int [] a2 = {1,3};
+		int [] a3 ={2,3};
+		int[][] a = {{1,2},{1,3},{2,3}};
+	//System.out.println(solution(a));
+		System.out.println(a.length);
+		/*
 		// TODO Auto-generated method stub
 		 MyScanner sc = new MyScanner();
          out = new PrintWriter(new BufferedOutputStream(System.out));
@@ -62,7 +103,7 @@ public class BoyorGirl {
 
          System.out.println("IGNORE HIM!");
      }
-
+*/
      
  
          

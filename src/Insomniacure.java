@@ -30,7 +30,7 @@ Output the number of damaged dragons.
  */
 public class Insomniacure {
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	
 		 MyScanner sc = new MyScanner();
          out = new PrintWriter(new BufferedOutputStream(System.out));
      //총 5줄의 입력, 4줄동안은 배수이고, 마지막 줄은 모든 용 숫자로 이걸 나눈다.
